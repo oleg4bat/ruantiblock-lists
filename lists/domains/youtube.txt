@@ -1,0 +1,18 @@
+# YouTube: используемые домены + узкие видеодомены из itdoginfo/allow-domains
+youtube.com
+googlevideo.com
+ytimg.com
+ggpht.com
+youtu.be
+yt.be
+youtube-nocookie.com
+youtubekids.com
+wide-youtube.l.google.com
+youtube-ui.l.google.com
+youtubei.googleapis.com
+youtubeembeddedplayer.googleapis.com
+youtube.googleapis.com
+yt3.googleusercontent.com
+ytimg.l.google.com
+yt-video-upload.l.google.com
+jnn-pa.googleapis.com

@@ -1,0 +1,7 @@
+# Прочие сервисы — исходный list1
+clickup.com
+app.clickapp.com
+lostfilm.tv
+speedtest.net
+steamddb.info
+metacritic.com

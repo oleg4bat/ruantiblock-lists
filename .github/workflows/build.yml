@@ -1,0 +1,42 @@
+name: Build Ruantiblock list
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'lists/**'
+      - 'config/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruantiblock-list-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Generate combined list
+        run: python3 scripts/build.py
+      - name: Publish all.txt
+        run: |
+          git add all.txt domains.txt ips.txt
+          if git diff --cached --quiet; then
+            echo "all.txt is already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update combined Ruantiblock list"
+          git push

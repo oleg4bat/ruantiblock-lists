@@ -1,0 +1,8 @@
+# Anthropic / Claude — исходный list2
+anthropic.com
+claude.ai
+claude.com
+claudeusercontent.com
+claudemcpclient.com
+# CDN (исходное full: заменено обычным FQDN)
+servd-anthropic-website.b-cdn.net
