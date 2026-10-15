@@ -12,10 +12,12 @@ servd-anthropic-website.b-cdn.net
 # domains/ai/google
 google.com
 gstatic.com
+googleusercontent.com
 googleapis.com
 deepmind.com
 deepmind.google
 ai.google.dev
+withgoogle.com
 generativeai.google
 ai.studio
 gemini.google
@@ -274,4 +276,3 @@ youtubemobilesupport.com
 yt.be
 ytimg.com
 doubleclick.net
-yt3.googleusercontent.com
