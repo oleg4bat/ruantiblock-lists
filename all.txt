@@ -1,5 +1,5 @@
-# Ruantiblock — автоматически сформированный список.
-# Источники: lists/**/*.txt. Не редактируйте результат вручную.
+# Ruantiblock — automatically generated.
+# Edit lists/**/*.txt, not this file.
 
 # domains/ai/anthropic
 anthropic.com
@@ -130,7 +130,7 @@ ytimg.l.google.com
 yt-video-upload.l.google.com
 jnn-pa.googleapis.com
 
-# IPv4 / CIDR (сведены без добавления новых адресов)
+# IPv4 / CIDR
 5.28.192.0/18
 5.200.14.128/25
 12.129.184.160/29
