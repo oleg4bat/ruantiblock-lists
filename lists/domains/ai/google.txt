@@ -1,5 +1,10 @@
-# Google AI: узкие домены Gemini, AI Studio, NotebookLM, Jules, Opal и Antigravity (без общих Google API)
+# Google AI — все исходные адреса list2 + добавлен родительский google.com
+# Широкие домены добавлены намеренно. Сборщик убирает вложенные повторы из all.txt.
+google.com
+www.google.com
 accounts.google.com
+gstatic.com
+googleapis.com
 deepmind.com
 deepmind.google
 geller-pa.googleapis.com
@@ -10,6 +15,7 @@ ai.google.dev
 alkalicore-pa.clients6.google.com
 alkalimakersuite-pa.clients6.google.com
 webchannel-alkalimakersuite-pa.clients6.google.com
+clients6.google.com
 generativeai.google
 makersuite.google.com
 ai.studio

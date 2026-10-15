@@ -5,6 +5,18 @@ from pathlib import Path
 from scripts.build import build
 
 class TestBuild(unittest.TestCase):
+    def test_original_coverage_anchors(self):
+        from ipaddress import ip_network
+        repo = Path(__file__).resolve().parents[1]
+        records = set()
+        for file in (repo / "lists").rglob("*.txt"):
+            records.update(x.strip() for x in file.read_text().splitlines() if x.strip() and not x.startswith("#"))
+        for domain in ("google.com", "googleapis.com", "gstatic.com", "youtube.com.au", "discordstatus.com", "crixet.com"):
+            self.assertIn(domain, records)
+        self.assertIn("5.28.128.0/17", records)
+        for cidr in ("162.158.0.0/15", "172.64.0.0/13", "35.192.0.0/12", "35.208.0.0/12"):
+            self.assertIn(cidr, records)
+
     def test_collapse_and_domains(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder)
